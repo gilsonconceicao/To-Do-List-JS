@@ -187,12 +187,16 @@ body {
     padding: 5px;
 }
 
-@media screen and (max-width: 900px) {
-    .conteiner_TodDoList {
-        margin: auto 20px ;
+@media screen and (max-width: 900px) {    
+
+    body {
+        display: block;
+        height: 100vh;
     }
-    
-    
+
+    #form_list {
+        margin: auto 20px;
+    }
 
     #buttonAddList {
         width: 100px;
@@ -203,6 +207,10 @@ body {
     #form_list {
         display: block;
         padding: 20px 10px;
+    }
+
+    #areaAnswer {
+        margin: auto 20px;
     }
 
     .iconAddList {
