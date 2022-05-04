@@ -36,6 +36,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover; 
     padding-bottom: 30px;
+    height: 100%;
 }
 
 .apresentWebSite {
@@ -190,8 +191,8 @@ body {
 @media screen and (max-width: 900px) {    
 
     body {
+        
         display: block;
-        height: 100vh;
     }
 
     #form_list {
@@ -210,7 +211,7 @@ body {
     }
 
     #areaAnswer {
-        margin: auto 20px;
+        margin: auto 20px 40px 20px;
     }
 
     .iconAddList {
