@@ -1,0 +1,108 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #dddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.container {
+    background-color: #fff;
+    box-shadow: 0 0 10px #2424245d;
+    border-radius: 5px;
+    max-width: 400px;
+    padding: 20px;
+    margin: 40px auto 10px auto;
+}
+
+
+
+.container h2 {
+    font-size: 2em;
+}
+
+.container p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.add-product label {
+    color: #494949;
+    font-size: 18px;
+    margin: 20px 0 ;
+}
+
+.add-product input {
+    padding: 4px;
+    width: 90%;
+    margin: 4px 0 ;    
+}
+
+.container button {
+    background-color: #1e81ec;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    transition: all .5s;
+    display: block;
+    margin: 10px 0 ;
+    font-size: 18px;
+}
+
+
+.itens-adding {
+    max-width: 400px;
+    background-color: #fff;
+    box-shadow: 0 0 10px #2424245d;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 5px;
+} 
+
+.product-users {
+    padding: 10px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 0 5px #3b3a3a5c;
+    margin: 5px 0;
+}
+
+.product-users p {
+    margin: 10px 0 3px 0;
+}
+
+.product-users button {
+    padding: 3px;
+    position: absolute;
+    right: 5px;
+    top: 5px;    
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+
+.dateList {
+    position: absolute;
+    right: 35px;
+    top: 8px;   
+}
+
+@media screen and (max-width: 500px) {
+    
+    .container {
+        margin: 3% 10px 10px 10px;
+    } 
+    .itens-adding {margin: 10px;}
+}

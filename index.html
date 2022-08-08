@@ -4,41 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To do list</title>
-    <link rel="stylesheet" href="src/css/toDoList.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Elemento</title>
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
     <header>
-        <h2>
-            <span class="iconHeader">
-                <i class="fa-solid fa-pen"></i>
-            </span>
-             To do list
-        </h2>
+        <h1>Bem vindo ao Tech Mundo</h2>
     </header>
-    <main>
-        <div class="apresentWebSite">
-            <h2>Welcome the to do list!</h2>
-            <span class="iconActive"><i class="fa-solid fa-circle-check"></i></span>
+    
+    <section class="container"> 
+        <div class="title-options">
+            <h2>Fetch users API | jsonplaceholder</h2>
+            <span >
+                <a href="createusers.html">App JavaScript</a>
+            </span>
         </div>
-        <section class="conteiner_TodDoList">
-            <form id="form_list">
-              
-                <div id="localAddList">
-                    <input type="text" id="title_list" required placeholder="Título da tarefa..." autocomplete="off">
+        <div class="containerAPI"></div>
+    </section>
 
-                    <textarea name="text" id="list_Text" rows="1" required  placeholder="Adicione a sua tarefa..." autocomplete="off"></textarea>
-                </div>
-                <input type="submit" id="buttonAddList" value="Adicionar">
-            </form>
-            <div id="areaAnswer">
-                <!-- continue... -->
-                <button class="btnsOptions" onclick="addMoreList()"><i class="fa-solid fa-circle-plus"></i> adicionar</button>
-                <button class="btnsOptions" onclick="removeItensList()">X Excluir tarefas</button>
-            </div>
-        </section>
-    </main>
 </body>
-<script src="src/js/appToDoList.js" defer ></script>
+<script src="src/js/requereApi.js" defer></script>
 </html>
