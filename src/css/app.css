@@ -99,6 +99,8 @@ header {
     top: 8px;   
 }
 
+.textError {color: #ff0000;}
+
 @media screen and (max-width: 500px) {
     
     .container {
