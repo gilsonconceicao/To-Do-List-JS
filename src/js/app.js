@@ -1,3 +1,5 @@
+const titleTaskForm = document.querySelector('#nameOfProdut').value; 
+const textDescritionForm = document.querySelector('#textDescrition').value; 
 const listProductPage = document.querySelector('.listProducts')
 const bankData = []; 
 
@@ -49,6 +51,10 @@ class List {
             `
         
         listProductPage.appendChild(bodyInfo); 
+
+        // clear
+        titleTaskForm.innerHTML = '';
+        textDescritionForm.innerHTML = ''; 
     }
 
     removeItemList() {
@@ -57,9 +63,8 @@ class List {
 
                 document.querySelectorAll('[remover]').forEach(itemButton => 
                     itemButton.onclick = function() {
-                        
+                        alert('Um item foi removido com sucesso.')
                         itemButton.style.display = 'none'
-        
                     })
             })
     }
@@ -68,8 +73,6 @@ class List {
 
 
 function btnAddSave() {
-    const titleTask = document.querySelector('#nameOfProdut').value; 
-    let textDescrition = document.querySelector('#textDescrition').value; 
 
     if (titleTask === '' && textDescrition === '') {
         alert('Digite os dois campos para prosseguir...');
@@ -81,11 +84,9 @@ function btnAddSave() {
 
     } else {
 
-        const instanciar = new List(titleTask, textDescrition); 
+        const instanciar = new List(titleTaskForm, textDescritionForm); 
 
         instanciar.addList();
         instanciar.removeItemList();
     }
- 
-
 }
